@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07080b">
+
+    <title>Altın Takip</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">₺</div>
+
+            <div>
+                <div class="brand-title">Altın Takip</div>
+                <div class="brand-subtitle">PİYASA MERKEZİ</div>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <button class="nav-item active" data-page="home">
+                <span>⌂</span>
+                <b>Ana Sayfa</b>
+            </button>
+
+            <button class="nav-item" data-page="markets">
+                <span>📊</span>
+                <b>Piyasalar</b>
+            </button>
+
+            <button class="nav-item" data-page="favorites">
+                <span>☆</span>
+                <b>Favoriler</b>
+            </button>
+
+            <button class="nav-item" data-page="portfolio">
+                <span>💼</span>
+                <b>Portföy</b>
+            </button>
+
+            <button class="nav-item" data-page="calculator">
+                <span>🧮</span>
+                <b>Hesapla</b>
+            </button>
+
+            <button class="nav-item" data-page="settings">
+                <span>⚙️</span>
+                <b>Ayarlar</b>
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="market-status">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>Piyasa aktif</strong>
+                    <small id="sidebarDataStatus">Gerçek veri bekleniyor</small>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="header">
+
+            <div>
+                <div class="mobile-brand">ALTIN TAKİP</div>
+
+                <h1 id="pageTitle">Günaydın 👋</h1>
+
+                <p id="pageDescription">
+                    Altın ve piyasa fiyatlarını tek ekrandan takip et.
+                </p>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-button" id="notificationButton">
+                    🔔
+                </button>
+
+                <button class="refresh-button" id="refreshButton">
+                    ↻ <span>Yenile</span>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <div id="pageContent"></div>
+
+
+        <footer>
+
+            <span>Altın Takip</span>
+
+            <span>
+                Gerçek piyasa verisi · Çoklu kaynak
+            </span>
+
+            <span id="lastUpdate">
+                Son güncelleme: şimdi
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- TOAST -->
+<div id="toast" class="toast">
+    <span id="toastIcon">✓</span>
+    <span id="toastText">İşlem tamamlandı</span>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
